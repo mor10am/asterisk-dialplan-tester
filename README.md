@@ -67,7 +67,6 @@ test_number1:
     - wait_context: asterisktest-3
     - assert_context: asterisktest-3
     - assert_variable: myvar=test
-    - wait_sound: cdno_1859
     - wait_context: asterisktest-5
     - assert_context: asterisktest-5
     - hangup: true

@@ -1,0 +1,180 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "37cf2e56de45d3c3352d97047b8f1550",
+    "packages": [
+        {
+            "name": "apache/log4php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://git-wip-us.apache.org/repos/asf/logging-log4php.git",
+                "reference": "ae4116e491d46170378c39c8c861a0153a957f5b"
+            },
+            "require": {
+                "php": ">=5.2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/main/php/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "A versatile logging framework for PHP",
+            "homepage": "http://logging.apache.org/log4php/",
+            "keywords": [
+                "log",
+                "logging",
+                "php"
+            ],
+            "time": "2013-06-07 17:49:39"
+        },
+        {
+            "name": "marcelog/pami",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marcelog/PAMI.git",
+                "reference": "50ed321ee04781564e81150d887f0afb40ab1717"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marcelog/PAMI/zipball/50ed321ee04781564e81150d887f0afb40ab1717",
+                "reference": "50ed321ee04781564e81150d887f0afb40ab1717",
+                "shasum": ""
+            },
+            "require": {
+                "pear-log4php/apache_log4php": ">=2.1.0",
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PAMI": "src/mg"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Marcelo Gornstein",
+                    "email": "marcelog@gmail.com",
+                    "homepage": "http://marcelog.github.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Asterisk Manager Interface (AMI) client for PHP, event driven, object oriented",
+            "homepage": "http://marcelog.github.com/PAMI",
+            "keywords": [
+                "action",
+                "ami",
+                "asterisk",
+                "client",
+                "event",
+                "manager",
+                "monitor",
+                "telephony",
+                "voip"
+            ],
+            "time": "2013-10-08 19:30:08"
+        },
+        {
+            "name": "pear-pear.apache.org/log4php/Apache_log4php",
+            "version": "2.3.0",
+            "dist": {
+                "type": "file",
+                "url": "http://pear.apache.org/log4php/get/Apache_log4php-2.3.0.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "php": ">=5.2.0.0"
+            },
+            "replace": {
+                "pear-log4php/apache_log4php": "== 2.3.0.0"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "description": "Apache log4php is a versatile logging framework for PHP at the Apache Software Foundation (ASF)."
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Yaml",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Yaml.git",
+                "reference": "1f7cabb841e62ec49615bd965ac780fd994b3f64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/1f7cabb841e62ec49615bd965ac780fd994b3f64",
+                "reference": "1f7cabb841e62ec49615bd965ac780fd994b3f64",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Yaml\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "http://symfony.com",
+            "time": "2013-10-17 11:48:11"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "marcelog/pami": 20,
+        "symfony/yaml": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

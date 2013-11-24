@@ -1,0 +1,30 @@
+options:
+    host: '127.0.0.1'
+    port: 5038
+    username: 'asterisktest'
+    secret: 'asterisktest'
+    connect_timeout: 30
+    read_timeout: 30
+
+before:
+    - call:
+        context: asterisktest-1
+        extension: s
+        priority: 1
+        callerid: 35957457
+
+after:
+
+
+test_number1:
+    - wait_context:
+        context: asterisktest-1
+        timeout: 30
+    - assert_context: asterisktest-1
+    - wait_context: asterisktest-3
+    - assert_context: asterisktest-3
+    - assert_variable: myvar=test
+    - wait_context: asterisktest-5
+    - assert_context: asterisktest-5
+    - hangup: true
+

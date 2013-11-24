@@ -1,0 +1,20 @@
+{
+    "name": "mor10am/asterisktest",
+    "version": "0.0.1-dev",
+    "minimum-stability": "dev",
+    "repositories": [
+      {
+        "type": "pear",
+        "url": "http://pear.apache.org/log4php/"
+      }],
+    "require": {
+        "apache/log4php": ">=2.1.0",
+        "marcelog/pami": "dev-master",
+        "symfony/yaml": "2.4.*@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "AsteriskTest": "src/"
+        }
+    }
+}
